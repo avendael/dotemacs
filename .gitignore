@@ -3,3 +3,44 @@
 
 # Packaging
 .cask
+
+# Emacs files that might be site-local or contains sensitive data
+tramp/
+org/
+backups/
+request/
+eshell/
+auto-save-list/
+pcache/
+bookmarks/
+lastdir/
+history/
+archive-contents/
+url/
+tmp/
+elpa/
+cask/
+
+projectile-bookmarks.eld
+projectile.cache
+
+persistent-scratch
+
+remote-hosts.el
+org-clock-save.el
+
+%*
+*.pyc
+*.orig
+*.gpg
+*.elc
+*.dat
+*.lock
+*~
+
+.emacs.desktop
+.elscreen
+.newsrc-dribble
+.ruby-version
+.org-id-locations
+.mc-lists.el
