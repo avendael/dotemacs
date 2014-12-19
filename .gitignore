@@ -5,6 +5,8 @@
 .cask
 
 # Emacs files that might be site-local or contains sensitive data
+dict
+semanticdb/
 tramp/
 org/
 backups/
