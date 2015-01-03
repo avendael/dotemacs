@@ -24,9 +24,9 @@ print a message in the minibuffer with the result."
   "Toggle transparent or opaque display."
   (interactive)
   (if (/=
-       (cadr (frame-parameter nil 'alpha)) 100)
-      (set-frame-parameter nil 'alpha '(100 100))
-    (set-frame-parameter nil 'alpha '(90 90))))
+       (cadr (frame-parameter (selected-frame) 'alpha)) 100)
+      (set-frame-parameter (selected-frame) 'alpha '(100 100))
+    (set-frame-parameter (selected-frame) 'alpha '(90 90))))
 
 (defun avendael-join-next-line ()
   "Join the next line with the current line."

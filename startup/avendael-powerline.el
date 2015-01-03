@@ -33,6 +33,18 @@
   (set-face-attribute 'powerline-inactive2 nil
                       :inherit 'mode-line :background "#eee8d5"))
 
+(defun avendael-powerline-ample ()
+  "Use the dark theme for powerline."
+  (interactive)
+  (set-face-attribute 'powerline-active1
+                      nil :inherit 'mode-line :background "#383838" :foreground "#7d7c61")
+  (set-face-attribute 'powerline-active2 nil
+                      :inherit 'mode-line :background "#5f5f5f" :foreground "#252525")
+  (set-face-attribute 'powerline-inactive1 nil
+                      :inherit 'mode-line-inactive :background "#4F4F4F")
+  (set-face-attribute 'powerline-inactive2 nil
+                      :inherit 'mode-line :background "#6f6f6f"))
+
 (defun avendael-powerline-theme ()
   "Setup a mode line that avendael likes."
   (interactive)
@@ -78,7 +90,7 @@
                              (powerline-fill face1 (powerline-width rhs))
                              (powerline-render rhs)))))))
 
-(avendael-powerline-dark)
+(avendael-powerline-ample)
 (avendael-powerline-theme)
 
 (provide 'avendael-powerline)

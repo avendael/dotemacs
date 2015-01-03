@@ -40,6 +40,7 @@ COMMAND: the command."
 
 (add-hook 'shell-mode-hook 'avendael-shell-mode-hook)
 (add-hook 'term-mode-hook 'evil-emacs-state)
+(add-to-list 'auto-mode-alist '("\\.zsh\\'" . sh-mode))
 
 (provide 'avendael-shell)
 ;;; avendael-shell.el ends here

@@ -12,7 +12,7 @@
 (add-to-list 'custom-safe-themes
     "cead5b757549e6272f7ffebbb87e190dc2b4036e4d035ba2eefdc41a23ba11a9"
     "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d")
-(load-theme 'monokai t)
+(load-theme 'ample-flat t)
 (popwin-mode 1)
 
 (setq display-buffer-function 'popwin:display-buffer)
